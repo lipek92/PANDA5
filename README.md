@@ -3,9 +3,10 @@ PANDA5
 
 Zespół:
 - Maciej Borkowski
-- Łukasz Piotrkowski
-- Krzysztof Ochędzan
 - Michał Lipowski
+- Krzysztof Ochędzan
+- Łukasz Piotrkowski
+
 
  
 =====
