@@ -1,0 +1,16 @@
+<p id="noticewlasny"><%= notice %></p>
+<p>
+  <strong>Język:</strong>
+  <%= @gist.lang %>
+</p>
+<p>
+  <strong>Kod:</strong>
+</p>
+<%= raw Pygments.highlight(@gist.snippet, lexer: @gist.lang) %>
+<p>
+  <strong>Opis:</strong>
+  <%= @gist.description %>
+</p>
+
+<%= link_to 'Edytuj', edit_gist_path(@gist), :class => "btn btn-warning" %>
+<%= link_to 'Cofnij', gists_path, :class => "btn btn-danger" %>

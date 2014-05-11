@@ -1,0 +1,8 @@
+      <tr class="gist">
+        <td><%= raw Pygments.highlight(gist.snippet.length > 80 ? gist.snippet[0,80] + "..." : gist.snippet, lexer: gist.lang) %></td>
+        <td><%= gist.lang %></td>
+        <td><%= gist.description %></td>
+        <td><%= link_to 'Wyświetl', gist,  :class => "btn btn-info  btn-lg" %></td>
+        <td><%= link_to 'Edytuj', edit_gist_path(gist), :class => "btn btn-warning  btn-lg" %></td>
+        <td><%= link_to 'Usuń', gist, method: :delete, data: { confirm: 'Czy na pewno usunąć?' }, :class => "btn btn-danger btn-lg" %></td>
+      </tr>
