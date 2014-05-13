@@ -50,3 +50,7 @@ group :production do
 end
 
 gem 'sqlite3', group: [:development, :test]
+
+group :development, :test do
+  gem 'rspec-rails'
+end
