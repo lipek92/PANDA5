@@ -48,5 +48,28 @@ describe "#POST #delete" do
       end.to change(Gist, :count).by(-1)
     end
   end
+  
+ describe "GET #update" do  
+
+  before :each do 
+      @gist = FactoryGirl.create(:gist) 
+  end 
+
+    it "redirect to gists after edit" do
+      @attr = { :snippet => "Snippet title", :lang => "c" , :description => "Tak" }
+      put :update, :id => @gist.id, :gist => @attr
+          
+      @gist.reload 
+      expect(response).to redirect_to "/gists/"+@gists.id.to_s
+    end
+
+    it "update gist" do
+      @attr = { :snippet => "Snippet title", :lang => "c" , :description => "Sample code" }
+      put :update, :id => @gist.id, :gist => @attr
+          
+      @gist.reload 
+      @gist.description.should eq("Sample code") 
+    end
+  end
 end
 
