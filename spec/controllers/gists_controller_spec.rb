@@ -49,7 +49,7 @@ describe "#POST #delete" do
     end
   end
   
- describe "GET #update" do  
+ describe "#PUT #update" do  
 
   before :each do 
       @gist = FactoryGirl.create(:gist) 
