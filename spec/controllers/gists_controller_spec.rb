@@ -60,7 +60,7 @@ describe "#POST #delete" do
       put :update, :id => @gist.id, :gist => @attr
           
       @gist.reload 
-      expect(response).to redirect_to "/gists/"+@gists.id.to_s
+      expect(response).to redirect_to "/gists/"+@gist.id.to_s
     end
 
     it "update gist" do
