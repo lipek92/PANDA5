@@ -14,4 +14,16 @@ describe "gists/new.html.erb" do
     render
     expect(view).to render_template(:partial => "_form", :count => 1)
   end
+
+  it "display back link" do
+    render
+    rendered.should have_link('Cofnij', href: gists_path)
+  end
+
+  it "display confirm button" do
+    render
+    rendered.should have_selector('input[type=submit]')
+  end
+
+
 end
