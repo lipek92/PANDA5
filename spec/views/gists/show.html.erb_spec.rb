@@ -2,8 +2,16 @@ require 'spec_helper'
 
 describe "gists/show.html.erb" do
 
-  it "displays header" do
-    #should have_selector('a', value: "Confij", href: gists_path)
+  it "displays back link" do
+    assign(:gist, stub_model(Gist, lang: "php"))
+    render
+    rendered.should have_link('Cofnij', href: gists_path)
+  end
+
+  it "displays edit link" do
+    assign(:gist, stub_model(Gist, lang: "php"))
+    render
+    rendered.should have_link('Edytuj', edit_gist_path(:gist))
   end
 
   it "displays lang" do
