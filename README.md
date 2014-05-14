@@ -9,7 +9,7 @@ Zespół:
 - Krzysztof Ochędzan
 - Łukasz Piotrkowski
 
-
+Link do aplikacji na Shelly Cloud: http://panda5.shellyapp.com/
  
 =====
 
