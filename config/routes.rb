@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
+  resources :users
+
   resources :gists
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -55,4 +59,9 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  get "register" => "users#new",        :as => "register"
+  get "login"    => "sessions#new",     :as => "login"
+  get "logout"   => "sessions#destroy", :as => "logout"
+  resources :users
+  resources :sessions
 end

@@ -1,0 +1,8 @@
+<h1>Logowanie</h1>
+<%= form_for :sessions, { url: sessions_path } do |f| %>
+  <%= f.text_field :email %>
+  <%= f.password_field :password %>
+  <div class="form-actions">
+    <%= f.submit "Zaloguj", class: 'btn btn-primary' %>
+  </div>
+<% end %>
