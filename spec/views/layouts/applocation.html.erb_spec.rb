@@ -15,6 +15,6 @@ describe "layouts/application.html.erb" do
 
     it "git button" do
       render
-      rendered.should have_link("Projekt na Github'ie", "https://github.com/lipek92/my_gists")
+      rendered.should have_link("Projekt na Github'ie", "https://github.com/lipek92/PANDA5")
     end
 end

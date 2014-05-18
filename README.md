@@ -22,6 +22,8 @@ Link do aplikacji na Shelly Cloud: http://panda5.shellyapp.com/
 * gem cancan
 * gem capybara
 * gem factory_girl_rails
+* gem shelly-dependencies
+* gem rspec-rails
 
 ####Wykonane zadania:
 * Poprawione widoki
@@ -33,7 +35,7 @@ Link do aplikacji na Shelly Cloud: http://panda5.shellyapp.com/
 * Dodane kilka przykładowych rekordów do pliku seeds.rb
 * Zaimplementowane wyszukiwanie po opisie
 * Możliwość rejestracji + restrykcje dla niezalogowanych
-* Dopisane testy dla controllers i views
+* Dopisane testy korzystające z narzędzia RSpec
 
 ####
             __..                     ..__              
