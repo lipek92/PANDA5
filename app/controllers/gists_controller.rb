@@ -48,7 +48,6 @@ end
   # PATCH/PUT /gists/1.json
   def update
     respond_to do |format|
-       authorize! :update, @gist
       if @gist.update(gist_params)
         format.html { redirect_to @gist, notice: 'Kod został poprawnie zaktualizowany.' }
         format.json { render action: 'show', status: :ok, location: @gist }

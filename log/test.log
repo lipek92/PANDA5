@@ -3896,3 +3896,471 @@ Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
   [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
   Rendered gists/_form.html.erb (11.2ms)
   [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/show.html.erb (138.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (26.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (13.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (12.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (12.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (12.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (13.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SessionsController#new as HTML
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-05-18 15:18:23.001270"], ["description", "Simple C#"], ["lang", "c#"], ["snippet", "C# examples"], ["updated_at", "2014-05-18 15:18:23.001270"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+Processing by GistsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGist Load (0.2ms)[0m  [1mSELECT  "gists".* FROM "gists"  WHERE "gists"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to http://test.host/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-05-18 15:18:23.017773"], ["description", "Simple C#"], ["lang", "c#"], ["snippet", "C# examples"], ["updated_at", "2014-05-18 15:18:23.017773"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GistsController#update as HTML
+  Parameters: {"gist"=>{"snippet"=>"Snippet title", "lang"=>"c", "description"=>"Sample code"}, "id"=>"1"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT  "gists".* FROM "gists"  WHERE "gists"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://test.host/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT  "gists".* FROM "gists"  WHERE "gists"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-05-18 15:18:23.026276"], ["description", "Simple C#"], ["lang", "c#"], ["snippet", "C# examples"], ["updated_at", "2014-05-18 15:18:23.026276"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GistsController#update as HTML
+  Parameters: {"gist"=>{"snippet"=>"Snippet title", "lang"=>"c", "description"=>"Tak"}, "id"=>"1"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT  "gists".* FROM "gists"  WHERE "gists"."id" = ? LIMIT 1[0m  [["id", 1]]
+Redirected to http://test.host/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+  [1m[35mGist Load (0.1ms)[0m  SELECT  "gists".* FROM "gists"  WHERE "gists"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-05-18 15:18:23.034201"], ["description", "Simple C#"], ["lang", "c#"], ["snippet", "C# examples"], ["updated_at", "2014-05-18 15:18:23.034201"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GistsController#create as HTML
+  Parameters: {"gist"=>{"snippet"=>"C# examples", "lang"=>"c#", "description"=>"Simple C#"}}
+Redirected to http://test.host/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-05-18 15:18:23.041251"], ["description", "Simple C#"], ["lang", "c#"], ["snippet", "C# examples"], ["updated_at", "2014-05-18 15:18:23.041251"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT  "gists".* FROM "gists"  WHERE "gists"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GistsController#new as HTML
+Redirected to http://test.host/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GistsController#new as HTML
+Redirected to http://test.host/login
+Filter chain halted as :login_required rendered or redirected
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered gists/_form.html.erb (30.7ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered gists/_form.html.erb (12.8ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered gists/_form.html.erb (11.7ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  Rendered gists/_form.html.erb (11.9ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (25.7ms)
+  Rendered gists/new.html.erb (47.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (11.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (11.9ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (12.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (12.9ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (12.8ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (12.9ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (13.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (12.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kazik@wp.pl' LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-05-18 15:20:57.214083"], ["email", "kazik@wp.pl"], ["password_digest", "123456"], ["updated_at", "2014-05-18 15:20:57.214083"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-05-18 15:20:57.222629"], ["description", "Simple C#"], ["lang", "c#"], ["snippet", "C# examples"], ["updated_at", "2014-05-18 15:20:57.222629"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GistsController#update as HTML
+  Parameters: {"gist"=>{"snippet"=>"Snippet title", "lang"=>"c", "description"=>"Tak"}, "id"=>"1"}
+  [1m[35mGist Load (0.3ms)[0m  SELECT  "gists".* FROM "gists"  WHERE "gists"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 5ms
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kazik@wp.pl' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-05-18 15:20:57.242951"], ["email", "kazik@wp.pl"], ["password_digest", "123456"], ["updated_at", "2014-05-18 15:20:57.242951"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-05-18 15:20:57.245433"], ["description", "Simple C#"], ["lang", "c#"], ["snippet", "C# examples"], ["updated_at", "2014-05-18 15:20:57.245433"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GistsController#update as HTML
+  Parameters: {"gist"=>{"snippet"=>"Snippet title", "lang"=>"c", "description"=>"Sample code"}, "id"=>"1"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT  "gists".* FROM "gists"  WHERE "gists"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 3ms
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kazik@wp.pl' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-05-18 15:20:57.268112"], ["email", "kazik@wp.pl"], ["password_digest", "123456"], ["updated_at", "2014-05-18 15:20:57.268112"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-05-18 15:20:57.270381"], ["description", "Simple C#"], ["lang", "c#"], ["snippet", "C# examples"], ["updated_at", "2014-05-18 15:20:57.270381"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+Processing by GistsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT  "gists".* FROM "gists"  WHERE "gists"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "gists" WHERE "gists"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/gists
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "gists"
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kazik@wp.pl' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-05-18 15:20:57.282995"], ["email", "kazik@wp.pl"], ["password_digest", "123456"], ["updated_at", "2014-05-18 15:20:57.282995"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-05-18 15:20:57.284841"], ["description", "Simple C#"], ["lang", "c#"], ["snippet", "C# examples"], ["updated_at", "2014-05-18 15:20:57.284841"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT  "gists".* FROM "gists"  WHERE "gists"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kazik@wp.pl' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-05-18 15:20:57.294739"], ["email", "kazik@wp.pl"], ["password_digest", "123456"], ["updated_at", "2014-05-18 15:20:57.294739"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-05-18 15:20:57.296641"], ["description", "Simple C#"], ["lang", "c#"], ["snippet", "C# examples"], ["updated_at", "2014-05-18 15:20:57.296641"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GistsController#create as HTML
+  Parameters: {"gist"=>{"snippet"=>"C# examples", "lang"=>"c#", "description"=>"Simple C#"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-05-18 15:20:57.301989"], ["description", "Simple C#"], ["lang", "c#"], ["snippet", "C# examples"], ["updated_at", "2014-05-18 15:20:57.301989"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/gists/2
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kazik@wp.pl' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-05-18 15:20:57.307980"], ["email", "kazik@wp.pl"], ["password_digest", "123456"], ["updated_at", "2014-05-18 15:20:57.307980"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GistsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kazik@wp.pl' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-05-18 15:20:57.317898"], ["email", "kazik@wp.pl"], ["password_digest", "123456"], ["updated_at", "2014-05-18 15:20:57.317898"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GistsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by SessionsController#new as HTML
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (25.7ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (11.5ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (11.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (12.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (12.2ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (12.7ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (23.1ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (12.0ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered gists/_form.html.erb (12.3ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kazik@wp.pl' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-05-18 15:21:25.300543"], ["email", "kazik@wp.pl"], ["password_digest", "123456"], ["updated_at", "2014-05-18 15:21:25.300543"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GistsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kazik@wp.pl' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-05-18 15:21:25.315529"], ["email", "kazik@wp.pl"], ["password_digest", "123456"], ["updated_at", "2014-05-18 15:21:25.315529"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-05-18 15:21:25.317833"], ["description", "Simple C#"], ["lang", "c#"], ["snippet", "C# examples"], ["updated_at", "2014-05-18 15:21:25.317833"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GistsController#update as HTML
+  Parameters: {"gist"=>{"snippet"=>"Snippet title", "lang"=>"c", "description"=>"Tak"}, "id"=>"1"}
+  [1m[36mGist Load (0.3ms)[0m  [1mSELECT  "gists".* FROM "gists"  WHERE "gists"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "gists" SET "description" = ?, "lang" = ?, "snippet" = ?, "updated_at" = ? WHERE "gists"."id" = 1  [["description", "Tak"], ["lang", "c"], ["snippet", "Snippet title"], ["updated_at", "2014-05-18 15:21:25.333887"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/gists/1
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+  [1m[35mGist Load (0.1ms)[0m  SELECT  "gists".* FROM "gists"  WHERE "gists"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kazik@wp.pl' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-05-18 15:21:25.343234"], ["email", "kazik@wp.pl"], ["password_digest", "123456"], ["updated_at", "2014-05-18 15:21:25.343234"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-05-18 15:21:25.345279"], ["description", "Simple C#"], ["lang", "c#"], ["snippet", "C# examples"], ["updated_at", "2014-05-18 15:21:25.345279"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GistsController#update as HTML
+  Parameters: {"gist"=>{"snippet"=>"Snippet title", "lang"=>"c", "description"=>"Sample code"}, "id"=>"1"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT  "gists".* FROM "gists"  WHERE "gists"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "gists" SET "description" = ?, "lang" = ?, "snippet" = ?, "updated_at" = ? WHERE "gists"."id" = 1[0m  [["description", "Sample code"], ["lang", "c"], ["snippet", "Snippet title"], ["updated_at", "2014-05-18 15:21:25.350148"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/gists/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT  "gists".* FROM "gists"  WHERE "gists"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kazik@wp.pl' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-05-18 15:21:25.356783"], ["email", "kazik@wp.pl"], ["password_digest", "123456"], ["updated_at", "2014-05-18 15:21:25.356783"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-05-18 15:21:25.358650"], ["description", "Simple C#"], ["lang", "c#"], ["snippet", "C# examples"], ["updated_at", "2014-05-18 15:21:25.358650"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGist Load (0.1ms)[0m  [1mSELECT  "gists".* FROM "gists"  WHERE "gists"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kazik@wp.pl' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-05-18 15:21:25.367811"], ["email", "kazik@wp.pl"], ["password_digest", "123456"], ["updated_at", "2014-05-18 15:21:25.367811"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-05-18 15:21:25.369860"], ["description", "Simple C#"], ["lang", "c#"], ["snippet", "C# examples"], ["updated_at", "2014-05-18 15:21:25.369860"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GistsController#create as HTML
+  Parameters: {"gist"=>{"snippet"=>"C# examples", "lang"=>"c#", "description"=>"Simple C#"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-05-18 15:21:25.375158"], ["description", "Simple C#"], ["lang", "c#"], ["snippet", "C# examples"], ["updated_at", "2014-05-18 15:21:25.375158"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/gists/2
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kazik@wp.pl' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-05-18 15:21:25.381039"], ["email", "kazik@wp.pl"], ["password_digest", "123456"], ["updated_at", "2014-05-18 15:21:25.381039"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GistsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.1ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'kazik@wp.pl' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "password_digest", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-05-18 15:21:25.391892"], ["email", "kazik@wp.pl"], ["password_digest", "123456"], ["updated_at", "2014-05-18 15:21:25.391892"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "gists" ("created_at", "description", "lang", "snippet", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-05-18 15:21:25.393760"], ["description", "Simple C#"], ["lang", "c#"], ["snippet", "C# examples"], ["updated_at", "2014-05-18 15:21:25.393760"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+Processing by GistsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGist Load (0.1ms)[0m  SELECT  "gists".* FROM "gists"  WHERE "gists"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "gists" WHERE "gists"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/gists
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "gists"[0m
+  [1m[35m (0.2ms)[0m  rollback transaction

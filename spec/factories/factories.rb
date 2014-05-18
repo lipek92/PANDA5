@@ -8,4 +8,11 @@ FactoryGirl.define do
   factory :invalid_gist, parent: :gist do 
     snippet nil 
   end 
+  FactoryGirl.define do 
+  factory :user do 
+     email "kazik@wp.pl" 
+     password_digest "123456"
+  end
 end 
+end
+

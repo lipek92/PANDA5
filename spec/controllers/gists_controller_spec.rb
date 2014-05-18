@@ -3,7 +3,10 @@ require 'spec_helper'
 describe GistsController do
 
 
-   
+  before :each do 
+      @user = FactoryGirl.create(:user)
+      session[:user_id] = @user.id 
+  end  
   
 describe "GET #new" do  
 

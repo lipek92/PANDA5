@@ -4,7 +4,7 @@
       	<a href="/gists" class="btn btn-primary btn-lg active" role="button">Strona główna</a>
 	<a href="https://github.com/lipek92/my_gists" class="btn btn-primary btn-lg active github" role="button">Projekt na Github'ie</a>
 <div class="pull-right" style="padding: 3px;">
-  <% if current_user %>
+  <% if session[:user_id] %>
     <div class="logged-in">Logged in as <%= current_user.email %></div> 
     <%= link_to "Log Out", session_path("current"), method: "delete" %>
   <% else %>
