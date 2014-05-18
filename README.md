@@ -1,17 +1,40 @@
-PANDA5
-======
-
-[![Build Status](https://travis-ci.org/lipek92/PANDA5.svg?branch=master)](https://travis-ci.org/lipek92/PANDA5)
-
+=PANDA5
+====
 Zespół:
 - Maciej Borkowski
 - Michał Lipowski
 - Krzysztof Ochędzan
 - Łukasz Piotrkowski
 
+====TRAVIS:
+[![Build Status](https://travis-ci.org/lipek92/PANDA5.svg?branch=master)](https://travis-ci.org/lipek92/PANDA5)
+
+====Shelly Cloud
 Link do aplikacji na Shelly Cloud: http://panda5.shellyapp.com/
- 
-=====
+
+====Dodane gemy:
+* gem pygments.rb
+* gem redcarpet
+* gem quiet_assets
+* gem bootstrap-sass
+* gem will_paginate
+* gem bcrypt
+* gem cancan
+* gem capybara
+* gem factory_girl_rails
+
+====Wykonane zadania:
+* Poprawione widoki
+* Zmiana CSS
+* Kolorowanie kodu
+* Paginacja (infinite scrolling)
+* Responsywność strony
+* Przycinanie kodu do określonej długości na stronie głównej
+* Dodane kilka przykładowych rekordów do pliku seeds.rb
+* Zaimplementowane wyszukiwanie po opisie
+* Możliwość rejestracji + restrykcje dla niezalogowanych
+* Dopisane testy dla controllers i views
+
 
             __..                     ..__              
          .gd$$$$$b                 .$$$$$bp.           
