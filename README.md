@@ -1,18 +1,18 @@
-=PANDA5
-====
-Zespół:
-- Maciej Borkowski
-- Michał Lipowski
-- Krzysztof Ochędzan
-- Łukasz Piotrkowski
+#PANDA5
 
-====TRAVIS:
+####Zespół:
+* Maciej Borkowski
+* Michał Lipowski
+* Krzysztof Ochędzan
+* Łukasz Piotrkowski
+
+####TRAVIS:
 [![Build Status](https://travis-ci.org/lipek92/PANDA5.svg?branch=master)](https://travis-ci.org/lipek92/PANDA5)
 
-====Shelly Cloud
+####Shelly Cloud
 Link do aplikacji na Shelly Cloud: http://panda5.shellyapp.com/
 
-====Dodane gemy:
+####Dodane gemy:
 * gem pygments.rb
 * gem redcarpet
 * gem quiet_assets
@@ -23,7 +23,7 @@ Link do aplikacji na Shelly Cloud: http://panda5.shellyapp.com/
 * gem capybara
 * gem factory_girl_rails
 
-====Wykonane zadania:
+####Wykonane zadania:
 * Poprawione widoki
 * Zmiana CSS
 * Kolorowanie kodu
@@ -35,7 +35,7 @@ Link do aplikacji na Shelly Cloud: http://panda5.shellyapp.com/
 * Możliwość rejestracji + restrykcje dla niezalogowanych
 * Dopisane testy dla controllers i views
 
-
+####
             __..                     ..__              
          .gd$$$$$b                 .$$$$$bp.           
         d$$$$$$$$$$               $$$$$$$$$$b          
