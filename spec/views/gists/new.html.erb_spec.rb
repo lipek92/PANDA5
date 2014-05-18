@@ -25,5 +25,20 @@ describe "gists/new.html.erb" do
     rendered.should have_selector('input[type=submit]')
   end
 
+  it "display snippet label" do
+    render
+    rendered.should have_field("gist_snippet")
+  end
+
+  it "display gist description" do
+    render
+    rendered.should have_field("gist_description")
+  end
+
+  it "display gist lang" do
+    render
+    rendered.should have_field("gist_lang")
+  end
+
 
 end

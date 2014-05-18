@@ -30,5 +30,20 @@ describe "gists/edit.html.erb" do
     rendered.should have_link('Wyświetl', gist_path(:gist))
   end
 
+  it "display snippet label" do
+    render
+    rendered.should have_field("gist_snippet")
+  end
+
+  it "display gist description" do
+    render
+    rendered.should have_field("gist_description")
+  end
+
+  it "display gist lang" do
+    render
+    rendered.should have_field("gist_lang")
+  end
+
 
 end
