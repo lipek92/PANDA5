@@ -55,6 +55,7 @@ end
 gem 'sqlite3', group: [:development, :test]
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 3.0.0.beta'
   gem 'factory_girl_rails'
+  gem 'rspec-rails-mocha'
 end

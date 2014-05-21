@@ -24,6 +24,7 @@ Link do aplikacji na Shelly Cloud: http://panda5.shellyapp.com/
 * gem factory_girl_rails
 * gem shelly-dependencies
 * gem rspec-rails
+* gem rspec-rails-mocha
 
 ####Wykonane zadania:
 * Poprawione widoki
